@@ -1,4 +1,5 @@
 import {
+    ADD_LEAD,
     DELETE_LEAD,
     GET_LEADS
 } from '../../actions/types';
@@ -13,6 +14,11 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 leads: action.payload
+            }
+        case ADD_LEAD :
+            return {
+                ...state,
+                leads: [...state.leads, action.payload]
             }
         case DELETE_LEAD :
             return {
