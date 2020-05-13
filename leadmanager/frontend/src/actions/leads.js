@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 import { GET_LEADS } from "./types";
+import { DELETE_LEAD } from "./types";
 
 // Get Leads
 export const getLeads = () => dispatch => {
@@ -9,6 +10,17 @@ export const getLeads = () => dispatch => {
             dispatch({
                 type: GET_LEADS,
                 payload: res.data
+            });
+        }).catch(err => console.log(err));
+};
+
+// Delete Lead
+export const deleteLead = id => dispatch => {
+    axios.delete(`/api/leads/${id}`)
+        .then(res => {
+            dispatch({
+                type: DELETE_LEAD,
+                payload: id
             });
         }).catch(err => console.log(err));
 };
