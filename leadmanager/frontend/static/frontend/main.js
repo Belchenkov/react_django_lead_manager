@@ -102,11 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!***************************************************!*\
   !*** ./leadmanager/frontend/src/actions/types.js ***!
   \***************************************************/
-/*! exports provided: GET_LEADS, DELETE_LEAD, ADD_LEAD */
+/*! exports provided: GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_ERRORS */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GET_LEADS\", function() { return GET_LEADS; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DELETE_LEAD\", function() { return DELETE_LEAD; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ADD_LEAD\", function() { return ADD_LEAD; });\nvar GET_LEADS = 'GET_LEADS';\nvar DELETE_LEAD = 'DELETE_LEAD';\nvar ADD_LEAD = 'ADD_LEAD';\n\n//# sourceURL=webpack:///./leadmanager/frontend/src/actions/types.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GET_LEADS\", function() { return GET_LEADS; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DELETE_LEAD\", function() { return DELETE_LEAD; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ADD_LEAD\", function() { return ADD_LEAD; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GET_ERRORS\", function() { return GET_ERRORS; });\nvar GET_LEADS = 'GET_LEADS';\nvar DELETE_LEAD = 'DELETE_LEAD';\nvar ADD_LEAD = 'ADD_LEAD';\nvar GET_ERRORS = 'GET_ERRORS';\n\n//# sourceURL=webpack:///./leadmanager/frontend/src/actions/types.js?");
 
 /***/ }),
 
@@ -194,6 +194,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 
 /***/ }),
 
+/***/ "./leadmanager/frontend/src/reducers/errors.js":
+/*!*****************************************************!*\
+  !*** ./leadmanager/frontend/src/reducers/errors.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: ENOENT: no such file or directory, open 'C:\\\\laragon\\\\www\\\\python\\\\lead_manager_react_django\\\\leadmanager\\\\frontend\\\\src\\\\reducers\\\\errors.js'\");\n\n//# sourceURL=webpack:///./leadmanager/frontend/src/reducers/errors.js?");
+
+/***/ }),
+
 /***/ "./leadmanager/frontend/src/reducers/index.js":
 /*!****************************************************!*\
   !*** ./leadmanager/frontend/src/reducers/index.js ***!
@@ -202,7 +213,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _leads__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./leads */ \"./leadmanager/frontend/src/reducers/leads/index.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  leads: _leads__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n}));\n\n//# sourceURL=webpack:///./leadmanager/frontend/src/reducers/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ \"./node_modules/redux/es/redux.js\");\n/* harmony import */ var _leads__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./leads */ \"./leadmanager/frontend/src/reducers/leads/index.js\");\n/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./errors */ \"./leadmanager/frontend/src/reducers/errors.js\");\n/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_errors__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__[\"combineReducers\"])({\n  leads: _leads__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  errors: _errors__WEBPACK_IMPORTED_MODULE_2___default.a\n}));\n\n//# sourceURL=webpack:///./leadmanager/frontend/src/reducers/index.js?");
 
 /***/ }),
 
