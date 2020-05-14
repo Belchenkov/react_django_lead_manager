@@ -1,0 +1,19 @@
+import React, { Component, Fragment } from 'react';
+import { withAlert } from "react-alert";
+
+export class Alerts extends Component {
+    componentDidMount() {
+        console.log(this.props)
+        //this.props.alert.show('It works!');
+    }
+
+    render() {
+        return (
+            <Fragment>
+                
+            </Fragment>
+        );
+    }
+}
+
+export default withAlert(Alerts);
